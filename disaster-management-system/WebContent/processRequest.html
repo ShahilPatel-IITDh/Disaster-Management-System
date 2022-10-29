@@ -10,16 +10,16 @@
 
 <title>Request Form</title>
 </head>
-<body>
+<body style="background-color: #FBECDB";>
 <div class="container">
     <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
-      <a href="Home.jsp" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+      <a href="Home.html" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
         <svg class="bi me-2" width="40" height="32"><use href="logo.jpeg"/></svg>
-        <span class="fs-4">IIT Blood Bank</span>
+        <span class="fs-4">Disaster Management System</span>
       </a>
 
       <ul class="nav nav-pills">
-        <li class="nav-item"><a href="adminHome.jsp" class="nav-link" aria-current="page">Home</a></li>
+        <li class="nav-item"><a href="adminHome.html" class="nav-link" aria-current="page">Home</a></li>
         <li class="nav-item">
 	        <form class="navbar-form" action = "DisplayDonors" method = POST>
 				<button type="submit" class="btn text-primary">Donors</button>
@@ -30,9 +30,9 @@
 				<button type="submit" class="btn text-primary">Requests</button>
 			</form>
         <li class="nav-item">
-        <li class="nav-item"><a href="compatDisplay.jsp" class="nav-link" aria-current="page">Compatibility Chart</a></li>
-        <li class="nav-item"><a href="newDonation.jsp"class="nav-link active">New Donation </a></li>
-        <li class="nav-item"><a href="processRequest.jsp" class="nav-link">Process request </a></li>
+        <li class="nav-item"><a href="compatDisplay.html" class="nav-link" aria-current="page">Compatibility Chart</a></li>
+        <li class="nav-item"><a href="newDonation.html"class="nav-link">New Donation </a></li>
+        <li class="nav-item"><a href="processRequest.html" class="nav-link active">Process request </a></li>
         <li class="nav-item"> 
         <form class="navbar-form" action = "viewBloodStock" method = POST>
 				<button type="submit" class="btn text-primary">Blood Stock</button>
@@ -43,22 +43,26 @@
 				<button type="submit" class="btn text-primary">Past Transfusions</button>
 			</form>
         <li class="nav-item">
-         <li class="nav-item"><a href="Home.jsp" class="nav-link">Logout </a></li>
+         <li class="nav-item"><a href="Home.html" class="nav-link">Logout </a></li>
       </ul>
     </header>
   </div>
   
   <main class="flex-shrink-0">
   <div style="width: 60%;" class="container">
-    <h1 class="mt-5">Register New Donation</h1>
+    <h1 class="mt-5">Process a Request</h1>
     <p class="lead">Please fill the form to proceed</p>
-    <form action="addDonation" method="POST">
+    <form action="processRequest" method="POST">
           <div class="mb-3">
-            <label class="form-label">Donor ID</label>
+            <label class="form-label">Blood Stock ID</label>
             <input type="text" required name="id" class="form-control">
           </div>
           <div class="mb-3">
-            <label class="form-label">Date of Donation</label>
+            <label class="form-label">Recipient ID</label>
+            <input type="text" required name="recipientID" class="form-control">
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Date of Process</label>
             <input type="date" required name="date" class="form-control">
           </div>
           <button type="submit" class="btn btn-primary">Submit</button>
