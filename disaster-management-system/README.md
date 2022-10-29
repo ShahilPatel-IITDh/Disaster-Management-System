@@ -1,19 +1,19 @@
-# Blood Bank Management System
+# Disaster Management System
 
 Project by
 
-- Ameen N (190010004)
-- Mohammad Sameer (190010024)
+- Shahil Patel (200010039)
+- Pranav Talegaonkar (200010041)
 
 ## OVERVIEW OF THE PROJECT
 
-Our project, Blood Bank Management System was built from the ground up keeping in mind ease of access for anyone wishing to sign themselves up for donating blood, as well as increasing accesibility for requesting to those in need.
+Our project, Disaster Management System was built from the ground up keeping in mind ease of access for Hospitals, shelters and food facilities in the regions affected by disasters.
 
-## ER MODEL
+<!-- ## ER MODEL
 
 The ER Model that we came up with is as follows:
 
-![ER MODEL](https://res.cloudinary.com/dynuzthsk/image/upload/v1635370562/monday/ERmodel_ollwxv.png)
+![ER MODEL](https://res.cloudinary.com/dynuzthsk/image/upload/v1635370562/monday/ERmodel_ollwxv.png) -->
 
 A brief explanation of each of the entities listed is as follows:
 
